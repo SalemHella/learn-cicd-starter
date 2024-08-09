@@ -14,6 +14,8 @@ jobs:
       - name: Set up Go and test and lint
         uses: actions/setup-go@v5
         with:
-          go-version: '1.22'
-        run: go test ./...
-        run: got fmt
+         go-version: '1.22'
+      - run: |
+          echo "start test"
+          go test ./...
+          go fmt
