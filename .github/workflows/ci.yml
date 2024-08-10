@@ -20,3 +20,4 @@ jobs:
           go test ./...
           go test -cover
           go fmt
+
