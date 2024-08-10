@@ -18,4 +18,5 @@ jobs:
       - run: |
           echo "start test"
           go test ./...
+          go test -cover
           go fmt
