@@ -17,4 +17,6 @@ jobs:
           go-version: '1.22'
       - run: go test ./...
       - run: go test -cover
-      - run: go fmt
+      - run: |
+          test -z $(go fmt ./...)
+          echo $?
