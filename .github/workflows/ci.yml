@@ -35,4 +35,6 @@ jobs:
           echo "start styling"
           test -z $(go fmt ./... )
           echo $?
+      - name : install staticcheck 
+      - run: go install honnef.co/go/tools/cmd/staticcheck@latest
 
