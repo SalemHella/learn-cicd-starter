@@ -19,5 +19,6 @@ jobs:
           echo "start test"
           go test ./...
           go test -cover
-          go fmt
+          test -z $(go fmt ./... )
+          echo $?
 
